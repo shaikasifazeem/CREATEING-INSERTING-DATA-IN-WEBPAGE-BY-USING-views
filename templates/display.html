@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: darkorchid;">
+    <center>
+        <U><h1 style="color: aliceblue;">DISPLAY TOPIC TABLE DETAILS </h1></U>
+        <Table border="10px" style="border-style: double;"">
+            <TR>
+                <TH>
+                    topic_name
+                </TH>
+            </TR>
+            {% for i in Topics %}
+             <tr>
+                <td>
+                    {{ i.topic_name}}
+                </td>
+             </tr>
+            {% endfor %}
+        </Table>
+    </center>
+    
+</body>
+</html>
